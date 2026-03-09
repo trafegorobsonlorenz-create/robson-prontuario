@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { cn } from "@/lib/utils";
-import { Eye, Users, Bell, CalendarDays, LogOut, DollarSign } from "lucide-react";
+import { Eye, Users, Bell, CalendarDays, LogOut, DollarSign, Cake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -12,6 +12,7 @@ const navItems = [
   { href: "/patients", label: "Pacientes", icon: Users },
   { href: "/alertas", label: "Alertas", icon: Bell },
   { href: "/financeiro", label: "Financeiro", icon: DollarSign },
+  { href: "/aniversariantes", label: "Aniversariantes", icon: Cake },
 ];
 
 export function Sidebar() {
